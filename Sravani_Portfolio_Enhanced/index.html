@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sravani Bura | Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Sravani Bura - BCA student and full-stack developer (MERN, Java, Python)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="loading">
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader-name" aria-label="Sravani Bura"><span class="word">SRAVANI</span><span class="word">BURA</span></div>
+    <p class="loader-role">Full-Stack Developer</p>
+    <div class="loader-bar"><span></span></div>
+    <div class="loader-count" id="loaderCount">0%</div>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">SB<span>.</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch theme"><i class="fas fa-sun"></i></button>
+        <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="tag reveal">Welcome to my portfolio</span>
+        <h1 class="reveal delay-1">I'm <span class="gradient-text">Sravani Bura</span></h1>
+        <h2 class="reveal delay-2"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="reveal delay-3">BCA student crafting responsive web and Android applications with the MERN stack, Java and Python. I love turning ideas into clean, useful and good-looking products.</p>
+        <div class="hero-btns reveal delay-4">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+        <div class="hero-social reveal delay-5">
+          <a href="https://github.com/sravanibura0550" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/sravani-bura-7227b8341" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/u/Wnk8zQsE1m/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+          <a href="mailto:sravanibura0550@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image reveal-right">
+        <div class="img-ring"></div>
+        <div class="img-wrap">
+          <img src="photo.png" alt="Sravani Bura" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="img-fallback">SB</div>
+        </div>
+        <div class="float-badge badge-1"><i class="fas fa-code"></i> MERN</div>
+        <div class="float-badge badge-2"><i class="fab fa-java"></i> Java</div>
+        <div class="float-badge badge-3"><i class="fab fa-python"></i> Python</div>
+        <div class="status"><span class="dot"></span> Available for Work</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down"><span>Scroll Down</span><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- Tech marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span><span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span><span>Android Studio</span><span>Figma</span><span>GitHub</span><span>C</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Get To Know Me</span>
+        <h2>About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-img reveal-left">
+          <div class="about-frame">
+            <img src="photo.png" alt="Sravani Bura" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="img-fallback">SB</div>
+          </div>
+          <div class="exp-box box-1"><h3><span class="counter" data-target="45">0</span></h3><p>Days MERN Internship</p></div>
+          <div class="exp-box box-2"><h3><span class="counter" data-target="4">0</span>+</h3><p>Projects Done</p></div>
+        </div>
+        <div class="about-text reveal-right">
+          <h3>A Dedicated Developer Based in Andhra Pradesh</h3>
+          <p>Hi! I'm Sravani Bura, a BCA student at Aditya Degree College for Women with hands-on experience in MERN stack development and a solid base in Java, Python, C, JavaScript, SQL and Data Structures &amp; Algorithms.</p>
+          <p>I've built responsive web apps and an Android learning app used by 10+ students, which won 2nd prize at the Technophilia fest. I'm looking for an entry-level Software Developer or Full-Stack opportunity where I can keep learning and ship real products.</p>
+          <ul class="info-list">
+            <li><strong>Name:</strong> Sravani Bura</li>
+            <li><strong>Email:</strong> sravanibura0550@gmail.com</li>
+            <li><strong>Location:</strong> Kakinada, Andhra Pradesh</li>
+            <li><strong>Status:</strong> Available for Work</li>
+          </ul>
+          <a href="cv.pdf" download="Sravani_Bura_CV.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section alt" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">What I Know</span>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill reveal"><div class="skill-top"><span><i class="fab fa-react"></i> React.js</span><em>Beginner</em></div><div class="bar"><span data-level="40"></span></div></div>
+        <div class="skill reveal delay-1"><div class="skill-top"><span><i class="fab fa-node-js"></i> Node.js &amp; Express</span><em>Beginner</em></div><div class="bar"><span data-level="40"></span></div></div>
+        <div class="skill reveal delay-2"><div class="skill-top"><span><i class="fab fa-js"></i> JavaScript</span><em>Intermediate</em></div><div class="bar"><span data-level="50"></span></div></div>
+        <div class="skill reveal delay-3"><div class="skill-top"><span><i class="fab fa-java"></i> Java</span><em>Intermediate</em></div><div class="bar"><span data-level="70"></span></div></div>
+        <div class="skill reveal"><div class="skill-top"><span><i class="fab fa-python"></i> Python</span><em>Advanced</em></div><div class="bar"><span data-level="75"></span></div></div>
+        <div class="skill reveal delay-1"><div class="skill-top"><span><i class="fas fa-database"></i> MongoDB &amp; SQL</span><em>Intermediate</em></div><div class="bar"><span data-level="65"></span></div></div>
+        <div class="skill reveal delay-2"><div class="skill-top"><span><i class="fab fa-android"></i> Android (Java + XML)</span><em>Intermediate</em></div><div class="bar"><span data-level="68"></span></div></div>
+        <div class="skill reveal delay-3"><div class="skill-top"><span><i class="fab fa-figma"></i> UI/UX (Figma)</span><em>Intermediate</em></div><div class="bar"><span data-level="70"></span></div></div>
+      </div>
+      <div class="chips reveal">
+        <span>C</span><span>HTML</span><span>CSS</span><span>DSA</span><span>OOP</span><span>DBMS</span><span>Computer Networks</span><span>Operating Systems</span><span>Cloud Computing</span><span>GitHub</span><span>VS Code</span><span>Android Studio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">My Recent Work</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web App</button>
+        <button class="filter" data-filter="mobile">Mobile</button>
+        <button class="filter" data-filter="mern">MERN</button>
+      </div>
+      <div class="projects-grid">
+        <article class="project" data-cat="web">
+          <div class="project-img grad-1"><i class="fas fa-utensils"></i>
+            <div class="overlay"><a href="https://deploy-e1d35c.netlify.app/login.html" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-link"></i></a><a href="https://github.com/sravanibura0550/-food-zone-web-app" target="_blank" rel="noopener" aria-label="Code"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <h3>Food Zone</h3>
+            <p>A smart food-ordering web app with interactive menus, dynamic functionality and easy navigation.</p>
+          </div>
+        </article>
+        <article class="project" data-cat="web mern">
+          <div class="project-img grad-2"><i class="fas fa-cloud-sun"></i>
+            <div class="overlay"><a href="https://github.com/sravanibura0550/ATMOS_AI_Weather_App" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-link"></i></a><a href="https://github.com/sravanibura0550/ATMOS_AI_Weather_App" target="_blank" rel="noopener" aria-label="Code"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <div class="stack"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            <h3>Atmos Weather</h3>
+            <p>A responsive weather app that shows real-time temperature, conditions, humidity and wind speed using a Weather API.</p>
+          </div>
+        </article>
+        <article class="project" data-cat="web mern">
+          <div class="project-img grad-3"><i class="fas fa-calendar-check"></i>
+            <div class="overlay"><a href="https://github.com/sravanibura0550/studybuddy-ai" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-link"></i></a><a href="https://github.com/sravanibura0550/studybuddy-ai" target="_blank" rel="noopener" aria-label="Code"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <div class="stack"><span>JavaScript</span><span>Express.js</span><span>Node.js</span></div>
+            <h3>Study Planner</h3>
+            <p>A student productivity app with task management, scheduling and backend services built on Node and Express.</p>
+          </div>
+        </article>
+        <article class="project" data-cat="mobile">
+          <div class="project-img grad-4"><i class="fas fa-mobile-screen-button"></i>
+            <div class="overlay"><a href="https://app-deployment-cb0afb.netlify.app/" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-link"></i></a><a href="https://github.com/sravanibura0550/CodeLearn-Android-App" target="_blank" rel="noopener" aria-label="Code"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <div class="stack"><span>Java</span><span>XML</span><span>SQLite</span></div>
+            <h3>Code Learn</h3>
+            <p>An Android learning app with programming modules and resources, used by 10+ students. Won 2nd prize at Technophilia.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section alt" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">My Journey</span>
+        <h2>Work <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="t-item left reveal-left">
+          <div class="t-card">
+            <span class="t-date">45 Days</span>
+            <h3>MERN Stack Development Intern</h3>
+            <h4>ADHOC Company</h4>
+            <p>Built full-stack web apps with MongoDB, Express.js, React.js and Node.js, including Atmos Study Buddy and Food Zone, focusing on usability and responsive UI.</p>
+          </div>
+        </div>
+        <div class="t-item right reveal-right">
+          <div class="t-card">
+            <span class="t-date">Nov 2023 – May 2024</span>
+            <h3>Project Documentation Trainee</h3>
+            <h4>S.N. Associates, Kakinada</h4>
+            <p>Maintained building-project records with MS Excel and Word, and assisted with route maps, building plans and data entry.</p>
+          </div>
+        </div>
+        <div class="t-item left reveal-left">
+          <div class="t-card">
+            <span class="t-date">2024 – Present</span>
+            <h3>Bachelor of Computer Applications</h3>
+            <h4>Aditya Degree College for Women</h4>
+            <p>Currently pursuing BCA with an SGPA of 84%. Won 2nd prize at the Technophilia internal fest.</p>
+          </div>
+        </div>
+        <div class="t-item right reveal-right">
+          <div class="t-card">
+            <span class="t-date">2021 – 2024</span>
+            <h3>Technical Education (CCP)</h3>
+            <h4>Government Polytechnic For Women</h4>
+            <p>Completed State Board of Technical Education and Training with 78%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">What I Offer</span>
+        <h2>My <span class="gradient-text">Services</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service reveal"><div class="s-icon"><i class="fas fa-laptop-code"></i></div><h3>Web Development</h3><p>Responsive, fast web applications built with HTML, CSS, JavaScript and the MERN stack.</p></div>
+        <div class="service reveal delay-1"><div class="s-icon"><i class="fab fa-android"></i></div><h3>Android Apps</h3><p>Student-friendly Android apps built with Java, XML and SQLite using Android Studio.</p></div>
+        <div class="service reveal delay-2"><div class="s-icon"><i class="fas fa-pen-ruler"></i></div><h3>UI/UX Design</h3><p>Clean, intuitive interfaces designed in Figma with a focus on usability.</p></div>
+        <div class="service reveal"><div class="s-icon"><i class="fas fa-server"></i></div><h3>Backend &amp; APIs</h3><p>REST APIs and backend services using Node.js, Express and MongoDB.</p></div>
+        <div class="service reveal delay-1"><div class="s-icon"><i class="fas fa-plug"></i></div><h3>API Integration</h3><p>Connecting third-party APIs like weather data into smooth, real-time user experiences.</p></div>
+        <div class="service reveal delay-2"><div class="s-icon"><i class="fas fa-file-excel"></i></div><h3>Documentation &amp; Data Entry</h3><p>Accurate project documentation and records with MS Excel and MS Word.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section alt" id="certifications">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Learning &amp; Recognition</span>
+        <h2>Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+      </div>
+      <div class="slider reveal">
+        <div class="slides" id="slides">
+          <div class="slide"><i class="fas fa-shield-halved"></i><p>Google Cybersecurity Professional Certificate</p><h4>Coursera</h4></div>
+          <div class="slide"><i class="fab fa-python"></i><p>Python Essentials</p><h4>Cisco</h4></div>
+          <div class="slide"><i class="fas fa-c"></i><p>C Essentials</p><h4>Cisco</h4></div>
+          <div class="slide"><i class="fab fa-html5"></i><p>MEPRO &amp; HTML Certification</p><h4>Pearson</h4></div>
+          <div class="slide"><i class="fas fa-trophy"></i><p>2nd Prize at the Technophilia Internal Fest</p><h4>Code Learn Android App</h4></div>
+        </div>
+        <div class="slider-dots" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Get In Touch</span>
+        <h2>Contact <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Work Together</h3>
+          <p>Have a project in mind or want to collaborate? Drop me a message and I'll get back to you as soon as possible!</p>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><a href="mailto:sravanibura0550@gmail.com">sravanibura0550@gmail.com</a></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><a href="tel:+918340848292">+91 8340848292</a></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-location-dot"></i></div><div><h4>Location</h4><span>Kakinada, Andhra Pradesh</span></div></div>
+          <div class="hero-social">
+            <a href="https://github.com/sravanibura0550" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sravani-bura-7227b8341" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://leetcode.com/u/Wnk8zQsE1m/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="field"><input type="text" id="name" required placeholder=" " /><label for="name">Your Name</label></div>
+          <div class="field"><input type="email" id="email" required placeholder=" " /><label for="email">Your Email</label></div>
+          <div class="field"><input type="text" id="subject" required placeholder=" " /><label for="subject">Subject</label></div>
+          <div class="field"><textarea id="message" rows="5" required placeholder=" "></textarea><label for="message">Message</label></div>
+          <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo">Sravani Bura<span>.</span></a>
+        <p>Creating digital experiences that make a difference. Let's build something amazing together.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="#services">Web Development</a></li><li><a href="#services">Android Apps</a></li><li><a href="#services">UI/UX Design</a></li><li><a href="#services">Backend &amp; APIs</a></li></ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul><li><a href="https://github.com/sravanibura0550" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/in/sravani-bura-7227b8341" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://leetcode.com/u/Wnk8zQsE1m/" target="_blank" rel="noopener">LeetCode</a></li></ul>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> Sravani Bura. All rights reserved. Crafted with <i class="fas fa-heart"></i></div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Portfolio assistant: answers common questions about this portfolio locally -->
+  <section class="assistant-widget" id="assistantWidget" aria-label="Portfolio AI assistant">
+    <div class="assistant-panel" id="assistantPanel" hidden>
+      <div class="assistant-head">
+        <div class="assistant-avatar"><i class="fas fa-robot"></i></div>
+        <div><strong>Sravani's AI Assistant</strong><small><span class="assistant-online"></span> Here to help</small></div>
+        <button class="assistant-close" id="assistantClose" type="button" aria-label="Close assistant"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="assistant-messages" id="assistantMessages" aria-live="polite">
+        <div class="assistant-message bot-message">Hi! 👋 I'm Sravani's portfolio assistant. Ask me about her skills, projects, education, achievements, or how to contact her.</div>
+      </div>
+      <div class="assistant-suggestions">
+        <button type="button" data-question="Tell me about Sravani">About</button>
+        <button type="button" data-question="What are her skills?">Skills</button>
+        <button type="button" data-question="Tell me about her projects">Projects</button>
+      </div>
+      <form class="assistant-form" id="assistantForm">
+        <input id="assistantInput" type="text" placeholder="Ask me something..." autocomplete="off" aria-label="Ask the portfolio assistant" required />
+        <button type="submit" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+      </form>
+      <p class="assistant-note">Portfolio information assistant · No external AI/API connection</p>
+    </div>
+    <button class="assistant-launcher" id="assistantLauncher" type="button" aria-label="Open portfolio assistant"><i class="fas fa-comment-dots"></i><span>Ask AI</span></button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
